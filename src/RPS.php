@@ -1,6 +1,16 @@
 <?php
     class RPS
     {
+        public $player1_input;
+        public $player2_input;
+
+        function __construct($player1_input, $player2_input)
+        {
+            $this->player1_input = $player1_input;
+            $this->player2_input = $player2_input;
+        }
+
+
         function turn($player1_input, $player2_input)
         {
             $possible_plays =   [['p1'=>'rock', 'p2'=>'paper', 'win'=>'player2'],

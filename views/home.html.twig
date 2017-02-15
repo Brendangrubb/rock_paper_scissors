@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+        <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <p>
-            Hey Charles!
-        </p>
+        <div class="container">
+            <form action="/result" method="post">
+                <h4>Player One</h4>
+                <div class="form-group">
+
+                    <div class="radio">
+                        <label for="player1_input"><input type="radio" name="player1_input" value="rock">Rock</label>
+                    </div>
+                    <div class="radio">
+                        <label for="player1_input"><input type="radio" name="player1_input" value="paper">Paper</label>
+                    </div>
+                    <div class="radio">
+                        <label for="player1_input"><input type="radio" name="player1_input" value="scissors">Scissors</label>
+                    </div>
+                </div>
+                <h4>Player Two</h4>
+                <div class="form-group">
+
+                    <div class="radio">
+                        <label for="player2_input"><input type="radio" name="player2_input" value="rock">Rock</label>
+                    </div>
+                    <div class="radio">
+                        <label for="player2_input"><input type="radio" name="player2_input" value="paper">Paper</label>
+                    </div>
+                    <div class="radio">
+                        <label for="player2_input"><input type="radio" name="player2_input" value="scissors">Scissors</label>
+                    </div>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
     </body>
 </html>
