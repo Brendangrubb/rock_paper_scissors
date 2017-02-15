@@ -24,8 +24,8 @@
         {
             //arrange
             $test_RPS = new RPS;
-            $input1="rock";
-            $input2="paper";
+            $input1="scissors";
+            $input2="rock";
 
             //Act
             $result = $test_RPS->turn($input1, $input2);
